@@ -3,7 +3,7 @@
 
 ## 1\. みんなが気になること
 
-* Arduino部分:よく使うパーツに対して， ライブラリはあるのかorないなら作れるのか
+* **Arduino部分:よく使うパーツに対して， ライブラリはあるのかorないなら作れるのか**
     * サーボモータ(5V PWM)・NeoPixel・ステッピングモータ(A4988)
     * ステッピングモータの制御
         * 今の所使えると予想(volatileやasmがないので) [https://github.com/waspinator/AccelStepper/tree/master](https://github.com/waspinator/AccelStepper/tree/master)
@@ -15,17 +15,18 @@
         * Adafruit\_NeoPixelを使いたいがまだ厳しいかも．
         * 仕様書を見て，以下を参考に改造すればもしかしたらって感じ
             * [https://github.com/adafruit/Adafruit_NeoPixel/pull/376](https://github.com/adafruit/Adafruit_NeoPixel/pull/376)
-* Linuxで受け取ったデータをどうやってArduinoへ流すか(逆も然り) 
+
+* **Linuxで受け取ったデータをどうやってArduinoへ流すか(逆も然り)** 
     * まだ検証できていないのでハンズオンでやりたいが、ハードウェアの制御のほう優先で
     * (RTOSなら)Mailboxでやりとり：[https://milkv.io/docs/duo/getting-started/rtoscore](https://milkv.io/docs/duo/getting-started/rtoscore)
     * RTOSでやる方法しかないって嘆き：[https://community.milkv.io/t/best-way-to-communicate-between-linux-and-arduino-program-on-milk-v-duo/1463](https://community.milkv.io/t/best-way-to-communicate-between-linux-and-arduino-program-on-milk-v-duo/1463)
     * Big CoreとLittle Coreでピンを物理的に接続して接続：https://milkv.io/docs/duo/getting-started/arduino](https://milkv.io/docs/duo/getting-started/arduino)
-* LinuxからArduinoのプログラムを書き込めるのか
+* **LinuxからArduinoのプログラムを書き込めるのか**
     * FreeRTOSのELFファイルの置き換え方法(Arduinoではない)：[https://community.milkv.io/t/it-is-possible-to-burn-arduino-remotely/1655/2](https://community.milkv.io/t/it-is-possible-to-burn-arduino-remotely/1655/2)
     * 議論はある：[https://community.milkv.io/t/arduino-image-and-freertos/1537](https://community.milkv.io/t/arduino-image-and-freertos/1537)
-* ラズパイみたいに急に電源落としても大丈夫なのか
+* **ラズパイみたいに急に電源落としても大丈夫なのか**
     * ぎてふ「多分だめ」
-* Linuxどんなの動かす？
+* **Linuxどんなの動かす？**
     * かわそん「Python3でHTTP通信(restAPI)」
     * Ubuntu22.04：[https://milkv.io/docs/duo/getting-started/buildroot-sdk](https://milkv.io/docs/duo/getting-started/buildroot-sdk)
 
@@ -33,14 +34,14 @@
 
 ### 概要
 ```md
-日付：06/08
-時間：
+**日付**：06/08
+**時間**：
 * 10:00-13:00 (3h)：オープンスペースで活動
 * 13:00-14:00 (1h)：休憩
 * 14:00-17:00 (3h)：会議室で活動
 * 17:00- 飲み
-場所：アップス [https://ups-s.com/](https://ups-s.com/)
-メンバー：Milk-V 深海さん+tofunology数名
+**場所**：アップス [https://ups-s.com/](https://ups-s.com/)
+**メンバー**：Milk-V 深海さん+tofunology数名
 ```
 
 ### 目的
@@ -57,17 +58,17 @@
 ### チームについて
 #### A. Linux+FreeRTOS + Uさん(ARAI Yu ),ぎてふ
 
-* 目標(最低) Linux+FreeRTOSのFreeRTOS側でLチカ
-* 目標(望ましい) Linuxを介して，FreeRTOSのLEDをホストコンピュータで制御
-* 目標(最大) Linuxを介してFreeRTOSのLEDをホストコンピュータで制御+センサー情報を取得
+* **目標(最低)** Linux+FreeRTOSのFreeRTOS側でLチカ
+* **目標(望ましい)** Linuxを介して，FreeRTOSのLEDをホストコンピュータで制御
+* **目標(最大)** Linuxを介してFreeRTOSのLEDをホストコンピュータで制御+センサー情報を取得
 
 #### B. Linux+Arduino + かわそん，たかちゃん，総長(Sho Onoguchi)
 
-* 目標(最低) Linux+ArduinoのArduino側でLチカ
-* 目標(望ましい1) Linuxを介して，ArduinoのLEDをホストコンピュータで制御
-* 目標(最大1) Linux+ArduinoのArduino側でサーボ制御(たかちゃん)
-* 目標(最大2) ホスト-Linux-Arduinoの通信調査(かわそん)
-* 目標(最大3) Linuxを介してArduinoのLEDをホストコンピュータで制御+センサー情報を取得(総長(オノグチ))
+* **目標(最低)** Linux+ArduinoのArduino側でLチカ
+* **目標(望ましい1)** Linuxを介して，ArduinoのLEDをホストコンピュータで制御
+* **目標(最大1)** Linux+ArduinoのArduino側でサーボ制御(たかちゃん)
+* **目標(最大2)** ホスト-Linux-Arduinoの通信調査(かわそん)
+* **目標(最大3)** Linuxを介してArduinoのLEDをホストコンピュータで制御+センサー情報を取得(総長(オノグチ))
 
 ## 3\. 広報/公開資料
 
@@ -75,9 +76,9 @@
 
 githubに基本的にup．顔が写ってたりする写真とか機密情報的なのはoneDriveに．
 
-* github：[https://github.com/tofunology-member/milkv-hands-on-20240608](https://github.com/tofunology-member/milkv-hands-on-20240608)
+* **github：[https://github.com/tofunology-member/milkv-hands-on-20240608](https://github.com/tofunology-member/milkv-hands-on-20240608)**
     * 深海さんは招待済み( [https://github.com/MilkVNaoki](https://github.com/MilkVNaoki) )
-* oneDrive : [https://1drv.ms/f/s!Aik5Z1FR2UJchIYJ5DWgPjOyYn3E0A](https://1drv.ms/f/s!Aik5Z1FR2UJchIYJ5DWgPjOyYn3E0A)
+* **oneDrive : [https://1drv.ms/f/s!Aik5Z1FR2UJchIYJ5DWgPjOyYn3E0A](https://1drv.ms/f/s!Aik5Z1FR2UJchIYJ5DWgPjOyYn3E0A)**
 
 ### xに関して
 
