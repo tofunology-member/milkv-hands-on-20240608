@@ -1,6 +1,4 @@
-## ここに書くおーーー
-
-## 足並みをそろえたい
+## まずはtofunologyとフカウミさんで足並みをそろえたい
 [団体紹介.pdf](https://1drv.ms/b/s!Aik5Z1FR2UJchIYYttUAW_XDsu4SJw?e=GaevKF)
 
 ## 1\. みんなが気になること
