@@ -87,37 +87,51 @@ githubに基本的にup．顔が写ってたりする写真とか機密情報的
 ## 4\. 必要な事前準備
 
 ### 当日持ち物
-
+#### 全員必須のもの
 * ノートパソコン（かわそんは持っていない→ぎてふ準備）
 * microSD-SD変換(あれば)
 * SDカード変換(あれば)
 * microSD：2,3個以上(みんな持ってくる)
-* L3ルータ，L2スイッチ：(たかちゃん)
-* LANケーブル：7本以上(ぎてふ)
-* シリアル-USB変換：(たかちゃん，深海さん)
-    * [こんな感じのやつhttps://milkv.io/docs/duo/arduino/duo-arduino-08.jpg](https://milkv.io/docs/duo/arduino/duo-arduino-08.jpg)
-* たかちゃんが持っているやつ [https://amz.run/9EN6](https://amz.run/9EN6)
-* ハンダセット(当日ピンの半田づけ)：(かわそん)
-* ピンヘッダ80pin以上：(要相談Uさん)
-* テスター：(かわそん・要相談Uさん)
-* 撮影道具(たかちゃん)
 * typeCのデータ通信できるケーブル：(全員，無いひとは相談)
 * ブレッドボード：全員，持ってない人は他のメンバーに相談
 * ジャンパワイヤ：たくさん持ってくる
-* スルーホール用テストワイヤ：40本(ぎてふ)
+
+#### 持ってる人は持ってくるモノ
 * LEDと抵抗：持ってきてほしい(3.3Vで光るか要チェック)
 * スイッチ・10kΩ抵抗(4.7kΩでも可)：持ってこれる人
+
+#### たかちゃん
 * MG996R：2つ(たかちゃん) [https://akizukidenshi.com/catalog/g/g112534/](https://akizukidenshi.com/catalog/g/g112534/)
+* 撮影道具(たかちゃん)
+* L3ルータ，L2スイッチ：(たかちゃん)
+* シリアル-USB変換：(たかちゃん，深海さん)
+    * たかちゃんが持っているやつ [https://amz.run/9EN6](https://amz.run/9EN6)
+
+#### 深海さん
+* シリアル-USB変換：(たかちゃん，深海さん)
+    * [こんな感じのやつhttps://milkv.io/docs/duo/arduino/duo-arduino-08.jpg](https://milkv.io/docs/duo/arduino/duo-arduino-08.jpg)
+* 届いたmilkvたち
+
+#### ぎてふ
+* LANケーブル：7本以上(ぎてふ)
+* スルーホール用テストワイヤ：40本(ぎてふ)
+
+#### かわそん
+* ステッピングモータx1：(かわそん)
+    * [持ってるやつ](https://akizukidenshi.com/catalog/g/g106578/)
+* ハンダセット(当日ピンの半田づけ)：(かわそん)
+
+
+#### 未定・要相談リスト
+* ピンヘッダ80pin以上：(要相談Uさん)
+* テスター：(かわそん・要相談Uさん)
 * 5V電源1.5Aくらい？DCプラグのやつx2：(要相談Uさん，ぎてふ)
 * DCジャックDIP化4つ：（要相談，discord）
 * 3.3-5レベル変換(4ビット双方向ロジックレベル変換モジュール BSS138)x4：(要相談Uさん)
 * A4988(ステッピングモータドライバ)x1：(要相談，discord)
 * 12V電源1.5Aくらい？DCプラグのやつx1：(要相談Uさん，ぎてふ)
-* ステッピングモータx1：(かわそん)
-    * [持ってるやつ](https://akizukidenshi.com/catalog/g/g106578/)
 
 ### 事前準備
-
 1. microSDカード事前にビルド(全員)
     - 以下のリンクを参考に作成
     - [https://milkv.io/ja/docs/duo/getting-started/boot](https://milkv.io/ja/docs/duo/getting-started/boot)
