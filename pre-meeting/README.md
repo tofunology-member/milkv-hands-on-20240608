@@ -20,7 +20,7 @@
     * まだ検証できていないのでハンズオンでやりたいが、ハードウェアの制御のほう優先で
     * (RTOSなら)Mailboxでやりとり：[https://milkv.io/docs/duo/getting-started/rtoscore](https://milkv.io/docs/duo/getting-started/rtoscore)
     * RTOSでやる方法しかないって嘆き：[https://community.milkv.io/t/best-way-to-communicate-between-linux-and-arduino-program-on-milk-v-duo/1463](https://community.milkv.io/t/best-way-to-communicate-between-linux-and-arduino-program-on-milk-v-duo/1463)
-    * Big CoreとLittle Coreでピンを物理的に接続して接続：https://milkv.io/docs/duo/getting-started/arduino](https://milkv.io/docs/duo/getting-started/arduino)
+    * Big CoreとLittle Coreでピンを物理的に接続して接続：[https://milkv.io/docs/duo/getting-started/arduino](https://milkv.io/docs/duo/getting-started/arduino)
 * **LinuxからArduinoのプログラムを書き込めるのか**
     * FreeRTOSのELFファイルの置き換え方法(Arduinoではない)：[https://community.milkv.io/t/it-is-possible-to-burn-arduino-remotely/1655/2](https://community.milkv.io/t/it-is-possible-to-burn-arduino-remotely/1655/2)
     * 議論はある：[https://community.milkv.io/t/arduino-image-and-freertos/1537](https://community.milkv.io/t/arduino-image-and-freertos/1537)
