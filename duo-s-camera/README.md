@@ -77,7 +77,6 @@ camera-test.sh
 
 
 # 6-A. FFMPEGでrtspサーバへアクセスして動画を見る
-[実際の動作の様子](./fig/demo_show_movie.mp4)
 
 ffplayコマンドを使うと別ウィンドウでカメラ映像が立ち上がります．
 ```sh
@@ -85,15 +84,19 @@ ffplay rtsp://192.168.11.20/h264
 ```
 ![](./fig/show_movie.gif)
 
+#### 動作の様子
+<div><video controls src="./fig/demo_show_movie.mp4" muted="false"></video></div>
 
 # 6-B.  FFMPEGでrtspサーバへアクセスして動画を録画する
-[実際の動作の様子](./fig/demo-out.mp4)
-
-一部パケットロスが起きてしまっている模様．
-通信性能に合わせて動画サイズをスケーリングできると良さそうですね．
 
 `out.mp4`というファイル名で保存されます．
 ```sh
 ffmpeg -i rtsp://192.168.11.20/h264 -f mp4 out.mp4
 ```
 ![](./fig/save_movie.gif)
+
+#### 実際の動作の様子
+一部パケットロスが起きてしまっている模様．
+通信性能に合わせて動画サイズをスケーリングできると良さそうですね．
+<div><video controls src="./fig/demo-out.mp4" muted="false"></video></div>
+
