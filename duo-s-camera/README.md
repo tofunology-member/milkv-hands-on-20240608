@@ -1,5 +1,11 @@
 # Duo-Sでカメラを使う
-
+------
+# 筆者の環境
+- Mac Book Pro 2020
+- 1.4 GHz クアッドコアIntel Core i5
+- RAM16GB
+- MacOS Sonoma 14.5（23F79）
+------
 # 使用しているDuo-Sについて
 無線付きは国内NGでしたので，無線部分を取り除いたverをいただきました．
 ![](./fig/duos-camera.jpg)
@@ -10,9 +16,9 @@
 
 # 使用しているカメラについて
 `CAM-GC2083`を使用しています．
-参考資料
+#### 参考資料
 - [https://milkv.io/ja/docs/duo/camera/gc2083](https://milkv.io/ja/docs/duo/camera/gc2083)
-
+------
 # 1. Duo-SでLinuxを動かす準備
 ### RISC-Vマイコンを使用する
 ![](https://milkv.io/docs/duo/duos/duos-arm-riscv-switch.webp)
