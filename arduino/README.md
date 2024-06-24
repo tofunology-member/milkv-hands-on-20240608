@@ -47,6 +47,7 @@ microSDを差し込んだ様子
 
 [Introduction](https://milkv.io/ja/docs/duo/getting-started/arduino)
 
+> [!IMPORTANT]
 > JSONファイルに関して、現時点最新のv0.2.4の`https://github.com/milkv-duo/duo-arduino/releases/download/v0.2.4/package_sg200x_index.json`の使用を推奨する
 
 ------
@@ -67,6 +68,7 @@ microSDを差し込んだ様子
 
 #### macOSで書き込む上での注意点
 
+> [!IMPORTANT]
 > すでにtofunologyメンバーがこの解決方法をPR出しました。
 > [v0.2.4](https://github.com/milkv-duo/duo-arduino/releases/tag/v0.2.4)のリリースにて解決済み
 
