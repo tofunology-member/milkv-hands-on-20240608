@@ -54,7 +54,7 @@ microSDを差し込んだ様子
 # 3. milkvへの書き込み
 ### PCとmilkVを接続する
 
-電源供給がされ、赤いLEDが点灯した後に青いLEDが点灯したらmilkVの起動したということになります。（青LED点灯まで2,3分ほどかかります）
+電源供給がされて赤いLEDが点灯した後、正しくLinuxが起動すると青いLEDが点灯する。（青LED点灯まで2,3分ほどかかる）
 
 ![](./img/turnon.gif)
 
@@ -82,13 +82,13 @@ An error occurred while uploading the sketch
 
 ![](./img/error.png)
 
-上記のエラー内に`burntool`とありますが、これが正しくは`burntool.py`であり起こるエラーだと考えられます。
+上記のエラー内に`burntool`とあるが、正しくは`burntool.py`であると考えている
 
 #### 解決策
 
 Arduino IDEでビルドした後に、エラー文で出たコマンド(burntool.pyになっていないコマンド)をコピーし、`.py` を付けてターミナル上でコマンドを打ち込み書き込む
 
-自分の環境では、以下のように実行させることによって書き込みを行うことができました。
+自分の環境では、以下を実行することで書き込めた。
 
 ```sh
 python3 /Users/username/Library/Arduino15/packages/sophgo/tools/burntool_py/0.2/burntool.py -p /dev/cu.usbmodem01234567893 -f 
