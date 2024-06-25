@@ -212,3 +212,5 @@
         $ mv /mnt/system/blink.sh /mnt/system/blink.sh_backup && sync
         $ reboot
         ```
+
+![動作の様子](milkv_led_blinking.gif)
